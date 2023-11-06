@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li, a, input {
+  font-family: antonio;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+
+}
+
+li a {
+  color: #758BFD;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.news-color{
+  color: #27187F;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5em 8%;
+  height: 15%;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0em 1.5em;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+  color: #0088a9;
+  box-shadow: 0 2px 0 0 currentColor;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border: 3px solid #758BFD;
+}
+
+main {
+  background-color: #DDEAF8;
+  padding: 5em 3.5em;
+}
+
+main img {
+  padding-bottom: 2.8em;
+}
+
+main p {
+  color: #133B3A;
+  font-family: antonio;
+}
+
+h1 {
+  color: #27187F;
+  padding: 0em 0em 2em 1.3em;
+  font-family: antonio;
+}
+
+.six-box{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+
+.white-box {
+  width: 25em;
+  padding: 33px 30px;
+  border-radius: 10px;
+  background: #FFF;
+}
+
+
+footer {
+  height: 15em;
+  display: flex;
+  justify-content: space-between;
+  background-color:  #758BFD;
+}
+
+h6 {
+  color: #FFF;
+  font-family: antonio;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+  
+footer i {
+  font-size: 3em;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.footer-img{
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-right: 5em;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+  .menu{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .nav-links{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .nav-links input{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toggler:checked ~ .menu{
+    max-height: 100%;
+  }
+}
